@@ -1,12 +1,15 @@
-# Covalence Full Stack Project Boilerplate
-This boilerplate includes build scripts and setup for a ReactJS front-end and an ExpressJS back-end.
+# My Personal Blog
+Creating a Full Stack developed blog to hone my newly learned programming skills!
 
-### Getting Started
-Remember to run `npm install` to install all necessary dependencies.
+### Goals
+Create MySQL DB to handle blog posts, users, and tags.
+Create Express Server to handle the routing to the MySQL DB.
+Create React Components to display the information in a clean way.
+Learn and have fun!
 
-### Careful!
-Make sure you are always working within the front-end or back-end `src` directory. Stay out of the `dist` and `lib` directories, as their contents will be erased each time the source code is transpiled.
+### Working On
+MySQL DB setup done, needs to be tested more.
+Front End display for blog posts
 
-### Running
-* To run the project during development (for automatic transpile and server restart), use `npm run dev`.
-* `npm run start` will be used in a production environment. It transpiles once and does not look for changes.
+### Completed
+Express Server setup via previous work on a boilerplate.
