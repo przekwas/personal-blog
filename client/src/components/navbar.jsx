@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import { Link } from 'react-router-dom';
+import AuthButton from './auth/authButton';
 
 class NavBar extends Component {
 
@@ -20,7 +21,7 @@ class NavBar extends Component {
                         <div className="collapse navbar-collapse" id="navbarResponsive">
                             <ul className="navbar-nav ml-auto text-uppercase font-weight-bold">
                                 <li className="nav-item">
-                                <Link className="nav-link" to="/">Home</Link>
+                                    <Link className="nav-link" to="/">Home</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">About</a>
@@ -30,6 +31,9 @@ class NavBar extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Contact</a>
+                                </li>
+                                <li className="nav-item ml-5">
+                                    <AuthButton />
                                 </li>
                             </ul>
                         </div>

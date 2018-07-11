@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import Table from '../table.js';
+import { isLoggedIn, tokenMiddleware } from '../middleware/auth.mw';
 
 let router = Router();
 
@@ -19,6 +20,9 @@ router.get('/blogs/:id?', (req, res) => {
             });
     }
 });
+
+// router.use(tokenMiddleware);
+// router.use(isLoggedIn);
 
 router.post('/blogs', (req, res) => {
     blogs.insert(req.body)
